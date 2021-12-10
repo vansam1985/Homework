@@ -1,0 +1,70 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dialogWindow {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    column-gap: 10px;
+    padding: 10px 10px;
+}
+
+.dialogWindow .avatar {
+    align-self: end;
+}
+
+.dialogWindow .avatar img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.32);
+    border-radius: 50px;
+}
+
+.dialogWindow .area {
+    width: 250px;
+    height: 77px;
+    margin-left: 26px;
+    background: #383b3e;
+    position: relative;
+    border-radius: 6px 6px 6px 0px;
+
+}
+.area:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    right: 100%;
+    top: calc(84%);
+    border-top: 10px solid transparent;
+    border-right: 20px solid #383b3e;
+    border-bottom: 2px solid transparent;
+}
+
+
+.dialogWindow .area .text {
+    grid-area: t;
+    padding-top: 7px;
+    padding-left: 38px;
+    width: 100%;
+    color: cornsilk;
+    font-size: 19px;
+}
+
+.dialogWindow .area .name {
+    grid-area: n;
+    padding-left: 9px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.dialogWindow .area .time {
+    grid-area: tm;
+    padding-left: 200px;
+    padding-right: 11px;
+    color: green;
+}
+
+
